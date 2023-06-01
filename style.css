@@ -1,0 +1,491 @@
+body {
+    background: rgb(39, 19, 1);
+    font-family: sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 30px;
+    background-color: rgb(39, 19, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    position: relative;
+    font-size: 2em;
+    color:rgb(255, 123, 0);
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(255, 123, 0);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    right: 50px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(255, 123, 0);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .2s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    position: relative;
+    right: 50px;
+    width: 100px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid rgb(255, 123, 0);
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(255, 123, 0);
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .2s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: rgb(255, 123, 0);
+    color: black;
+}
+
+.section {
+    background: url(school2.png) no-repeat center center;
+    min-height: 30rem;
+    overflow: hidden;
+}
+
+.section h3 {
+    font-size: 2em;
+    color: rgb(255, 123, 0);
+    position: absolute;
+    top: 150px;
+    padding: 0px 40px;
+    line-height: 50px;
+}
+
+.section .btn-1 {
+    position: relative;
+    right: 50px;
+    width: 130px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid rgb(255, 123, 0);
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(255, 123, 0);
+    font-weight: 500;
+    margin-left: 90px;
+    transition: .2s;
+    top: 300px;
+}
+
+.section .btn-1:hover {
+    background: rgb(255, 123, 0);
+    color: black;
+}
+
+showcase h6 {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(255, 123, 0);
+}
+
+.strand {   
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 2%;
+}
+
+.strand .card {
+    width: 230px;
+    position: relative;
+    height: 400px;
+    background: rgb(39, 19, 1);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 25px black;
+    transition: 0.3s ease-in-out;
+    margin-top: 5%;
+    
+}
+
+.strand .card .imgBx {
+    position: relative;
+    width: 230px;
+    height: 500px;
+    top: -90px;
+    box-shadow: 0px 10px 25px black;
+    border-radius: 10px;
+    color: rgb(255, 123, 0);
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.strand .card .imgBx img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.strand .card .card-button1 {
+    position: relative;
+    top: 330px;
+    left: 15px;
+    width: 200px;
+    height: 80px;
+    background: transparent;
+    border: 2px solid rgb(255, 123, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: rgb(255, 123, 0);
+    font-weight: 500;
+}
+
+.strand .card .card-button2 {
+    position: relative;
+    top: 330px;
+    left: 15px;
+    width: 200px;
+    height: 80px;
+    background: transparent;
+    border: 2px solid rgb(255, 123, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: rgb(255, 123, 0);
+    font-weight: 500;
+}
+
+.strand .card .card-button3 {
+    position: relative;
+    top: 330px;
+    left: 15px;
+    width: 200px;
+    height: 80px;
+    background: transparent;
+    border: 2px solid rgb(255, 123, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: rgb(255, 123, 0);
+    font-weight: 500;
+}
+
+.strand .card .card-button4 {
+    position: relative;
+    top: 330px;
+    left: 15px;
+    width: 200px;
+    height: 80px;
+    background: transparent;
+    border: 2px solid rgb(255, 123, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: rgb(255, 123, 0);
+    font-weight: 500;
+}
+
+.wrapper {
+    position: fixed;
+    top: 15%;
+    left: 35%;
+    width: 350;
+    height: 400px;
+    padding: 25px 30px;
+    background: rgb(39, 19, 1);
+    box-shadow: 0px 0px 5px 5px black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 600px;  
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    color: rgb(255, 123, 0);
+    text-align: center;
+    line-height: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+
+.form-box h2 {
+    text-align: center;
+    color: rgb(255, 123, 0);
+    font-size: 2em;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: rgb(255, 123, 0);
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(255, 123, 0);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: rgb(255, 123, 0);
+    line-height: 56px;
+}
+
+.remember-forgot {
+    font-size: .9em;
+    color: rgb(255, 123, 0);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: rgb(255, 123, 0);
+    margin: 3px;
+}
+
+.remember-forgot a {
+    color: rgb(255, 123, 0);
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: rgb(255, 123, 0);
+    color: rgb(39, 19, 1);
+    font-size: 1.5em;
+    font-weight: 600;
+    border-color: rgb(255, 123, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.login-register {
+    font-size: .9em;
+    color: rgb(255, 123, 0);
+    text-align: center;
+}
+
+.login-register p a {
+    color: rgb(255, 123, 0);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.login-register p a:hover {
+    color: rgb(255, 123, 0);
+    text-decoration: underline;
+}
+
+
+/* For screens less than or equal to 768px */
+@media screen and (max-width: 768px) {
+    header {
+      padding: 0px 10px;
+    }
+    .navigation a {
+      font-size: 0.9em;
+      margin-left: 20px;
+      right: auto;
+    }
+    .navigation .btnLogin-popup {
+      font-size: 0.9em;
+      margin-left: 20px;
+      right: auto;
+    }
+    .section h3 {
+      font-size: 1.5em;
+      padding: 0px 20px;
+      top: 120px;
+    }
+    .section .btn-1 {
+      font-size: 0.9em;
+      margin-left: 70px;
+      top: 250px;
+    }
+    .strand .card {
+      width: 180px;
+      height: 350px;
+      margin: 20px 5px;
+    }
+    .strand .card .imgBx {
+      width: 180px;
+      height: 400px;
+      top: -70px;
+      font-size: 1em;
+    }
+    .strand .card .card-button1,
+    .strand .card .card-button2 {
+      top: 250px;
+      width: 150px;
+      height: 60px;
+      font-size: 1.2em;
+    }
+  }
+  
+  /* For screens greater than 768px */
+  @media screen and (min-width: 768px) {
+    header {
+      padding: 0px 30px;
+    }
+    .navigation a {
+      font-size: 1.1em;
+      margin-left: 40px;
+      right: 50px;
+    }
+    .navigation .btnLogin-popup {
+      font-size: 1.1em;
+      margin-left: 40px;
+      right: 50px;
+    }
+    .section h3 {
+      font-size: 2em;
+      padding: 0px 40px;
+      top: 150px;
+    }
+    .section .btn-1 {
+      font-size: 1em;
+      margin-left: 90px;
+      top: 300px;
+    }
+    .strand .card {
+      width: 230px;
+      height: 400px;
+      margin: 30px 10px;
+    }
+    .strand .card .imgBx {
+      width: 230px;
+      height: 500px;
+      top: -90px;
+      font-size: 1.3em;
+    }
+    .strand .card .card-button1,
+    .strand .card .card-button2 {
+      top: 330px;
+      width: 200px;
+      height: 80px;
+      font-size: 1.5em;
+    }
+  }
